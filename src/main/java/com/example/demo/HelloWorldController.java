@@ -13,4 +13,9 @@ public class HelloWorldController {
         return new Message(name);
     }
 
+    @GetMapping("/greetings/")
+    public @ResponseBody
+    MessageStub stubGreetingExample() {
+        return new MessageStub();
+    }
 }
