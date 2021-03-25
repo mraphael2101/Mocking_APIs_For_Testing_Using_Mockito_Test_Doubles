@@ -12,6 +12,9 @@ import static org.mockito.Mockito.*;
 @SpringBootTest
 public class SpringRestServiceApplicationTests {
 
+	@InjectMocks
+	HelloWorldController helloWorldController;
+
 	@Mock
 	Message message;
 
@@ -28,6 +31,12 @@ public class SpringRestServiceApplicationTests {
 
 	@Test
 	public void sampleTestLeveragingInjectMocks() {
+
+		when(message.getMessage()).thenReturn("my mock value");
+
+		helloWorldController.greeting(message.getMessage());
+
+		verify(message, times(1)).getMessage();
 	}
 
 }
