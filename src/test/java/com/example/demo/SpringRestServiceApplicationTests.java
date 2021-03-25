@@ -18,7 +18,9 @@ public class SpringRestServiceApplicationTests {
 	@Test
 	public void sampleTestLeveragingMock() {
 		when(message.getMessage()).thenReturn("Message from Mock");
+
 		assertEquals("Message from Mock", message.getMessage());
+
 		System.out.println("Mock output: " + message.getMessage());
 
 		verify(message, times(2)).getMessage();
