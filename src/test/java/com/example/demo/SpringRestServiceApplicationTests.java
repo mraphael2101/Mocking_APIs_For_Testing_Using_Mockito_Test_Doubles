@@ -58,7 +58,9 @@ public class SpringRestServiceApplicationTests {
 		 */
 
 		when(message.getMessage()).thenReturn("my mocked value");
+
 		helloWorldController.greeting(message.getMessage());
+
 		verify(message, times(1)).getMessage();
 
 	}
