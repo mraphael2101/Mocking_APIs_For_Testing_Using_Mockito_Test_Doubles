@@ -1,0 +1,17 @@
+"Check the level of Java experience to determine how close it is to tester rather than developer"
+Learn how to implement
+ - Stubs
+ - Harnesses
+ - Mocks
+
+ - A stub/fake is a hardcoded working implementation of behaviour that you are not interested
+   in monitoring e.g. return x;
+ - A mock is a fake implementation of a class that you verify has been called correctly
+   as part of the test e.g.
+    a) Create a mocked list with x no of elements and values
+    b) when(mockedList.size()).thenReturn(100);
+    c) verify the invocation count of the above method
+ - Argument captors are used to capture arguments for a mock
+ - Spies are a variation of a mock and are to be used as an easy way to check if a
+   function is called i.e. the method calls made to the collaborator
+
