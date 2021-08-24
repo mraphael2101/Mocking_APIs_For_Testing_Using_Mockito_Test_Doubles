@@ -1,4 +1,4 @@
-package com.example.demo.examples;
+package com.example.demo.mockito.testdoubles.examples;
 
 /* Spies are an easy way to check if a function was called or to provide a custom return
  * value. We can use spies to test components that depend on a service and avoid actually

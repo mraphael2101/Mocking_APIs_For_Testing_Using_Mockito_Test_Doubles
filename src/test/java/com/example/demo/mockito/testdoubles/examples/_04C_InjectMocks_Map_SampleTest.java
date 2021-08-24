@@ -1,4 +1,4 @@
-package com.example.demo.examples;
+package com.example.demo.mockito.testdoubles.examples;
 
 import com.example.demo.data.MyDictionary;
 import org.junit.jupiter.api.BeforeEach;
